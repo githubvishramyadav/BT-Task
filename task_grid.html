@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-areas: "one two two three three" "one four five five six" "seven  four five five six" "seven eight eight nine six";
+            text-align: center;
+        }
+        
+        .grid>div {
+            padding: 70px;
+            border: 4px solid rgb(85, 83, 87);
+        }
+        
+        .one {
+            grid-area: one;
+            background-color: red;
+        }
+        
+        .two {
+            grid-area: two;
+            background-color: aqua;
+        }
+        
+        .three {
+            grid-area: three;
+            background-color: bisque;
+        }
+        
+        .four {
+            grid-area: four;
+            background-color: bisque;
+        }
+        
+        .five {
+            grid-area: five;
+            background-color: white;
+        }
+        
+        .six {
+            grid-area: six;
+            background-color: red;
+        }
+        
+        .seven {
+            grid-area: seven;
+            background-color: white;
+        }
+        
+        .eight {
+            grid-area: eight;
+            background-color: red;
+        }
+        
+        .nine {
+            grid-area: nine;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+    </div>
+</body>
+
+</html>
